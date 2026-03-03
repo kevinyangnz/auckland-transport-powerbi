@@ -2,6 +2,21 @@
 
 Interactive Power BI report analysing Auckland Transport data from July 2023 to December 2025, covering bus, train and ferry routes.
 
+
+## Interactive filters
+
+The interactive filters will remain throughout all pages. Use ctrl+click on the 'Clear All Filters' button to clear all filters.
+
+![interactive filters](report_images/variable_filter.png)
+
+
+## Navigation 
+
+Use ctrl+click to utilise the page navigator.
+
+![page navigatior](report_images/navigation.png)
+
+
 ## Patronage
 
 The Patronage page displays Auckland Transport patronage through four charts.
