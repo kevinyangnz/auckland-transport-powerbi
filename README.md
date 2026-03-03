@@ -67,7 +67,7 @@ The Map page consists of an interactive map showcasing all the transport routes.
 Data was sourced from official AT data sources: 
 
 - [Monthly public transport patronage](https://at.govt.nz/about-us/reports-publications/how-many-people-are-taking-buses-trains-and-ferries)
-- GTFS coordinate data sourced from the [Auckland Transport GTFS feed](https://at.govt.nz/about-us/at-data-sources/general-transit-feed-specification), with a preprocessed dataset provided by an Auckland Transport representative.
+- GTFS coordinate data sourced from the [Auckland Transport GTFS feed](https://at.govt.nz/about-us/at-data-sources/general-transit-feed-specification), with a preprocessed dataset provided by Auckland Transport.
 
 ## Preprocessing
 
