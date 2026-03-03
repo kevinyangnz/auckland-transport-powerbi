@@ -1,18 +1,18 @@
 # Auckland Transport Power BI
 
-Interactive Power BI report analysing Auckland Transport data from July 2023 to December 2025, covering bus, train and ferry routes.
-
+Interactive Power BI report analysing Auckland Transport data from July 2023 to December 2025, covering bus, train and ferry routes.  
+To view the Power BI report, you will need to have Microsoft Power BI installed. Afterwards, you only need to download the ```at_data.pbix``` file.
 
 ## Interactive filters
 
-The interactive filters will remain throughout all pages. Use ctrl+click on the 'Clear All Filters' button to clear all filters.
+The interactive filters will remain throughout all pages. Use ```ctrl+left_click``` on the Clear All Filters button to clear all filters.
 
 ![interactive filters](report_images/variable_filter.png)
 
 
 ## Navigation 
 
-Use ctrl+click to utilise the page navigator.
+Use ```ctrl+left_click``` to utilise the page navigator.
 
 ![page navigatior](report_images/navigation.png)
 
@@ -59,5 +59,19 @@ The Map page consists of an interactive map showcasing all the transport routes.
 - Central bus routes
 
 ![map page central](report_images/map_central.png)
+
+
+## Data source
+
+Data was sourced from official AT data sources: 
+
+- [Monthly public transport patronage](https://at.govt.nz/about-us/reports-publications/how-many-people-are-taking-buses-trains-and-ferries)
+- GTFS coordinate data sourced from the [Auckland Transport GTFS feed](https://at.govt.nz/about-us/at-data-sources/general-transit-feed-specification), with a preprocessed dataset provided by an Auckland Transport representative.
+
+## Preprocessing
+
+- Power Query transformations were utilised to unpivot the date columns and append all 3 monthly patronage tables into one table
+- The GTFS coordinate data provided in the ```gtfs_data_preprocess``` folder was further preprocessed with a Python script to construct WKT linestrings from the coordinates. A chunking algorithm was applied to split routes with linestrings exceeding Power BI's character cell limit of 32,767, producing ```coordinates.csv``` for map visualisation
+
 
 
